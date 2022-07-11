@@ -1,0 +1,10 @@
+@prefix eo: <https://w3id.org/ont/example-ont> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#invalid Person
+:ae950436-65db-4814-9677-25ff5ba86165 a eo:Person;
+    eo:hasAge 35 ;
+    eo:hasAge 40 ;
+    eo:hasName "John Smith" ;
+.

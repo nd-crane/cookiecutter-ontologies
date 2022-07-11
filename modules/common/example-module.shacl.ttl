@@ -1,0 +1,30 @@
+@prefix eo: <https://w3id.org/ont/example-ont> .
+@prefix eosh: <https://w3id.org/example-ont/shapes/shacl> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+eosh:PersonShape
+    rdf:type sh:NodeShape;
+    sh:TargetClass eo:Person ;
+    sh:property [
+        sh:path eo:hasAge ;
+        sh:class eo:Age ;
+        sh:maxCount: 1 ;
+    ] ;
+    sh:property [
+        sh:path eo:hasGender ;
+        sh:class eo:Gender ;
+        sh:maxCount: 1 ;
+    ] ;
+    sh:property [
+        sh:path eo:hasName ;
+        sh:class eo:Name ;
+        sh:maxCount: 1 ;
+    ] ;
+.
+eosh:
+    rdf:type owl:Ontology ;
+    owl:imports ont: ;
+.

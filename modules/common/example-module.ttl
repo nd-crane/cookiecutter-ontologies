@@ -1,0 +1,47 @@
+@prefix eo: <https://w3id.org/ont/example-ont> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://gra.fo/schema/example> rdf:type owl:Ontology .
+
+# Object Properties
+
+eo:hasage rdf:type owl:ObjectProperty ;
+            rdfs:domain eo:Person ;
+            rdfs:range eo:Age ;
+            rdfs:isDefinedBy <https://w3id.org/ont/example-ont> ;
+            rdfs:label "hasAge" .
+
+eo:hasgender rdf:type owl:ObjectProperty ;
+                rdfs:domain eo:Person ;
+                rdfs:range eo:Gender ;
+                rdfs:isDefinedBy <https://w3id.org/ont/example-ont> ;
+                rdfs:label "hasGender" .
+
+eo:hasname rdf:type owl:ObjectProperty ;
+            rdf:domain: eo:Person ;
+            rdfs:range eo:Name ;
+            rdfs:isDefinedBy <https://w3id.org/ont/example-ont> ;
+            rdfs:label "hasName" .
+
+# Classes
+
+eo:Age rdf:type owl:Class ;
+        rdfs:isDefinedBy <https://w3id.org/ont/example-ont> ;
+        rdfs:label "Age" .
+
+eo:Gender rdf:type owl:Class ;
+            rdfs:isDefinedBy <https://w3id.org/ont/example-ont> ;
+            rdfs:label "Gender" .
+
+eo:Name rdf:type owl:Class ;
+            rdfs:isDefinedBy <https://w3id.org/ont/example-ont> ;
+            rdfs:label "Name" .
+
+eo:Person rdf:type owl:Class ;
+            rdfs:isDefinedBy <https://w3id.org/ont/example-ont> ;
+            rdfs:label "Person" .
+
+
+
+
