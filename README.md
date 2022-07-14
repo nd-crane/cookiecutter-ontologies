@@ -26,3 +26,7 @@ very WIP.
 - [KGlab](https://derwen.ai/docs/kgl/) a simple abstraction layer in Python for building knowledge graphs.
 - [VSCode SPARQL Notebook](https://marketplace.visualstudio.com/items?itemName=Zazuko.sparql-notebook)
 - [VSCode SPARQL Snippets](https://marketplace.visualstudio.com/items?itemName=Zazuko.sparql-snippets)
+
+## Inspired by:
+
+- [OBO Ontology Development Kit](https://github.com/INCATools/ontology-development-kit)
