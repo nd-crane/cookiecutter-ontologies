@@ -1,4 +1,4 @@
-# NOTE: it is recommended that this script is NOT run inside of the project folder.
+#!/bin/bash 
 
 git clone https://github.com/dgarijo/Widoco.git
 cd Widoco
